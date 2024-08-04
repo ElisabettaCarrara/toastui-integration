@@ -61,7 +61,7 @@ function handle_file_upload() {
         require_once(ABSPATH . 'wp-admin/includes/file.php');
     }
 
-    $uploadedfile = $_FILES['file'];
+    $uploadedfile = $_FILES['filepond'];
     
     $upload_overrides = array('test_form' => false);
     $movefile = wp_handle_upload($uploadedfile, $upload_overrides);
